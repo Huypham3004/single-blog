@@ -1,0 +1,25 @@
+.button {
+    padding: 19px 32px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: $fontPrimary;
+}
+
+.button-style-2 {
+    padding: 13px 24px;
+}
+
+.button--primary {
+    background-color: #4F77FF;
+}
+
+.button--secondary {
+    background-color: #886CFF;
+}
+
+.button--block {
+    width: 100%;
+    text-transform: uppercase;
+}

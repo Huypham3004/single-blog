@@ -1,0 +1,36 @@
+.container--cta {
+    padding: 108px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.title-box__small-text {
+    font-size: 22px;
+    letter-spacing: -1px;
+    font-family: $fontPrimary;
+    margin-bottom: 30px;
+}
+
+.title-box__big-text {
+    font-size: 48px;
+    letter-spacing: -2px;
+    font-weight: 500;
+    color: #2D3958;
+}
+
+.subscribe-input {
+    width: 235px;
+    padding: 19px;
+    border: 1px solid #E7E5EA;
+    border-radius: 5px;
+}
