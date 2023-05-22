@@ -13,7 +13,7 @@
     border-bottom: 1px solid #E7E5EA;
 }
 
-.post__image {
+.post-image {
     width: 100%;
 
     img {
@@ -21,11 +21,12 @@
     }
 }
 
-.post__title {
+.post-title {
     padding: 25px 40px 50px 40px;
+
 }
 
-.detail-title__top {
+.post-title__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,21 +50,21 @@
     font-family: $fontPrimary;
 }
 
-.detail-title__title {
+.post-title__title {
     font-size: 36px;
     font-weight: 500;
     letter-spacing: -1px;
     font-family: $fontPrimary;
     color: #2D3958;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
-.detail-title__description {
-    margin-top: 30px;
+.post-title__description {
+    padding-top: 30px;
     color: #2D3958;
 }
 
-.post__content {
+.post-content {
     padding: 0 40px;
 }
 
@@ -93,7 +94,7 @@
     margin: 10px 0 40px 0;
 }
 
-.post__footer {
+.post-footer {
     width: 100%;
     padding: 0 40px 20px 40px;
     display: flex;
@@ -125,26 +126,13 @@
     border-radius: 5px;
 }
 
-.related__title {
-    font-size: 18px;
-    font-weight: 500;
-    font-family: $fontPrimary;
-    color: #2D3958;
-    margin-bottom: 30px;
-}
-
 .acticle-item__image {
     width: 100%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 
     img {
         width: 100%;
     }
-}
-
-.acticle-item__title {
-    font-size: 18px;
-    color: #2D3958;
 }
 
 .comments {
@@ -153,43 +141,40 @@
     margin-top: 50px;
 }
 
-.comments__title {
-    font-size: 18px;
-    font-weight: 500;
-    font-family: $fontPrimary;
-    color: #2D3958;
+.comments-title {
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(97, 119, 152, 0.2);
 }
 
-.comments__item {
-    margin-top: 20px;
-    padding-bottom: 20px;
+.comments-item {
+    padding: 20px 0;
     border-bottom: 1px solid rgba(97, 119, 152, 0.2);
-}
-
-.comment-detail {
     display: flex;
     gap: 30px;
 }
 
-.comment-content__header {
+.comments-item--no-border {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.comment-header {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.user-name {
+.comment-header__user-name {
     color: #333333;
 }
 
-.comment-time {
+.comment-header__comment-time {
     font-size: 14px;
     font-family: $fontPrimary;
     font-weight: 500;
 }
 
-.comment-content__text {
+.comment-text {
     padding: 25px 0 43px 0;
 }
 
@@ -204,17 +189,18 @@
     gap: 10px;
     color: #4F77FF;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .reply-button__icon {
     transform: rotateZ(-90deg)
 }
 
-.comments__write-comment {
+.write-comment {
     padding-top: 40px;
 }
 
-.write-box__title {
+.write-comment-label {
     font-size: 18px;
     font-weight: 500;
     font-family: $fontPrimary;
@@ -225,11 +211,10 @@
     width: 100%;
     border: 1px solid #E7E5EA;
     border-radius: 5px;
-    margin-top: 30px;
 }
 
 .comment-input-box--small {
-    padding: 10px 0 10px 15px;
+    padding: 10px 15px 10px 15px;
 }
 
 .comment-input-box--large {
@@ -237,7 +222,7 @@
     height: 170px;
 }
 
-.write-box__button {
+.submit-button {
     margin-top: 30px;
 }
 
@@ -257,7 +242,7 @@
     margin-bottom: 28px;
 }
 
-.search-box__input {
+.input-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -265,13 +250,14 @@
     background-color: #FFFFFF;
     border: 1px solid #E7E5EA;
     border-radius: 5px;
-    padding: 15px;
+    padding: 0 15px;
     width: 100%;
 }
 
-.input-text {
+.input-box__text {
     outline: none;
     border: none;
+    padding: 10px 0;
     width: 100%;
 }
 
@@ -287,28 +273,18 @@
     letter-spacing: -0.3px;
 }
 
-.select-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: #FFFFFF;
-    border: 1px solid #E7E5EA;
-    border-radius: 5px;
-    padding: 15px;
-    width: 100%;
-}
-
-.tags__tag-box {
+.tag-box {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
 
-.tag-text {
+.tag-box__text {
     padding: 5px;
     border-radius: 5px;
     background-color: #4F77FF;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .content-box--bg {
